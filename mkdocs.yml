@@ -1,0 +1,59 @@
+site_name: Experimenting with MkDocs
+site_url: https://github.com/romaicus/mkdocs-demo/
+site_description: MkDocs Work Inprogress
+site_author: Asim Mirza
+
+repo_url: https://github.com/romaicus/mkdocs-demo
+repo_name: 'GitHub Home'
+
+# Insert your Google Tracking ID
+google_analytics: ['UA-125864yyy-x', 'auto']
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Project Layout: layout.md
+  - Commands: commands.md
+  - Custom Domain Names: dns.md
+  - Website Types:
+    - Project: project.md
+    - User/Organization: organization.md
+
+theme:
+  name: 'material'
+  include_search_page: false   # Don't include MkDocs' JavaScript
+  search_index_only: true
+  language: en
+  feature:
+    tabs: false
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: 'images/Octocat.png'
+  favicon: 'assets/images/favicon.ico'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: false   # true if website has code
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
